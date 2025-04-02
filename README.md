@@ -126,7 +126,34 @@ Currently implemented test coverage:
 - GetMobileMoneyCodes
 - GetUSDInLocalAmount
 
+✅ **MobileMoney Module**
+- MakePayment
+- VerifyPayment
+- GetAllTransactions
 
+✅ **Payouts Module**
+- Airtime
+- Bank
+- Chimoney
+- GiftCard
+- Status
+
+✅ **Redeem Module**
+- Airtime
+- Any
+- Chimoney
+- GetChimoney
+- GiftCard
+- MobileMoney
+
+✅ **SubAccount Module**
+- Create
+- List
+- Delete
+
+✅ **Wallet Module**
+- GetBalance
+- List
 
 ### Sub-Account Management
 ```go
