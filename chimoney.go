@@ -129,7 +129,11 @@ func (c *Client) Do(ctx context.Context, method, path string, body interface{}, 
 	defer resp.Body.Close()
 
 	if resp.StatusCode < 200 || resp.StatusCode >= 300 {
-		return fmt.Errorf("chimoney: request failed with status %d", resp.StatusCode)
+		body, err := io.ReadAll(resp.Body)
+		if err != nil {
+			return fmt.Errorf("chimoney: request failed with status %d, failed to read error response: %v", resp.StatusCode, err)
+		}
+		return fmt.Errorf("chimoney: request failed with status %d: %s", resp.StatusCode, string(body))
 	}
 
 	if v != nil {
