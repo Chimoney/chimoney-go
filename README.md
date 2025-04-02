@@ -126,51 +126,7 @@ Currently implemented test coverage:
 - GetMobileMoneyCodes
 - GetUSDInLocalAmount
 
-### Contributing Tests
 
-We welcome contributions! The following modules still need test coverage:
-
-✅ **MobileMoney Module**
-- MakePayment
-- VerifyPayment
-- GetAllTransactions
-
-✅ **Payouts Module**
-- Airtime
-- Bank
-- Chimoney
-- GiftCard
-- Status
-
-✅ **Redeem Module**
-- Airtime
-- Any
-- Chimoney
-- GetChimoney
-- GiftCard
-- MobileMoney
-
-✅ **SubAccount Module**
-- Create
-- List
-- Delete
-
-✅ **Wallet Module**
-- GetBalance
-- List
-
-To contribute tests:
-1. Fork the repository
-2. Create a new branch for your tests
-3. Add tests following the existing patterns in `test/account` and `test/info`
-4. Ensure all tests pass
-5. Submit a pull request
-
-Test files should:
-- Use the test client from `test/testclient`
-- Include both success and error cases
-- Verify request parameters and headers
-- Validate response handling
 
 ### Sub-Account Management
 ```go
