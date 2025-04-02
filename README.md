@@ -104,7 +104,7 @@ transfer, err := client.Wallet.Transfer(ctx, "receiver123", "wallet_type")
 The SDK includes comprehensive unit tests. To run all tests:
 
 ```bash
-go test ./...
+go test -v ./test/...
 ```
 
 ### Test Coverage
