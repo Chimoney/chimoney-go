@@ -91,7 +91,7 @@ func (c *Client) Do(ctx context.Context, method, path string, body interface{}, 
 		reqBody = bytes.NewReader(b)
 	}
 
-	// Create request with base URL and path
+
 	// Create request with base URL and path
 	req, err := http.NewRequestWithContext(ctx, method, c.baseURL+path, reqBody)
 	if err != nil {

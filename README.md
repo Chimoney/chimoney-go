@@ -130,30 +130,34 @@ Currently implemented test coverage:
 
 We welcome contributions! The following modules still need test coverage:
 
-🔲 **MobileMoney Module**
+✅ **MobileMoney Module**
 - MakePayment
 - VerifyPayment
+- GetAllTransactions
 
-🔲 **Payouts Module**
+✅ **Payouts Module**
 - Airtime
 - Bank
 - Chimoney
 - GiftCard
-- Crypto
+- Status
 
-🔲 **Redeem Module**
-- InitiateRedeem
-- VerifyRedeem
+✅ **Redeem Module**
+- Airtime
+- Any
+- Chimoney
+- GetChimoney
+- GiftCard
+- MobileMoney
 
-🔲 **SubAccount Module**
+✅ **SubAccount Module**
 - Create
 - List
 - Delete
 
-🔲 **Wallet Module**
+✅ **Wallet Module**
 - GetBalance
 - List
-- Transfer
 
 To contribute tests:
 1. Fork the repository
